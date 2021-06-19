@@ -6,20 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- css link -->
     <link rel="stylesheet" href="./style.css">
+    <!-- js link -->
+    <script src="./app.js"></script>
     <title>Bensof estampados</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo-container">
-                <img src="" alt="">
-                <span>logo</span>
-            </div>
-            <!-- definir si usar btn, div,  -->
+    <nav>
+        <div class="logo-container">
+           <a href="#home">
+                <img src="./assets/logos/logo-circulo-01.jpg" alt="logo-bensof">
+           </a>
+            <!-- <span>logo</span> -->
+        </div>
+        <!-- definir si usar btn, div,  -->
+       
+        <!-- menu mobile -->
+        <div class="dropdown-menu-container">
             <button class="menu">
                 menu 
             </button>
-        </nav>
+            <!-- configurar el evento -->
+            <ul class="ul-list">
+                <li>
+                    <a href="#servicios">Servicios</a>
+                </li>
+                <li>
+                    <a href="#productos">Productos</a>
+                </li>
+                <li>
+                    <a href="#nosotros">Nosotros</a>
+                </li>
+                <li>
+                    <a href="#consultas">Consultas</a>
+                </li>
+                <li>
+                    <a href="#contacto">Contacto</a>
+                </li>
+            </ul>
+        </div>
+        <!-- menu desktop -->
+    </nav>
+    <header id="home">
+       
         <div class="title-container">
             <h1>Bensof</h1>
             <h3>estampados</h3>
@@ -30,7 +58,7 @@
         </div> -->
     </header>
     <main>
-        <section class="secciones">
+        <section class="secciones servicios-container" id="servicios">
             <div class="img-container">
                 <a href="">links a secciones</a>
             </div>
@@ -42,19 +70,48 @@
             </div>
             <div class="img-container">
                 <a href="">links a secciones</a>
+            </div>
+            <div class="img-container">
+                <a href="">links a secciones</a>
+            </div>
+            <div class="img-container btn-container">
+                <button class="see-more">ver mas</button>
             </div>
         </section>
-        <section class="secciones">
-
+        <section class="secciones products" id="productos">
+            <div class="products-container">
+               <!-- usar el evento para ocultar y mostrar la fseccion-->
+                <button>
+                    ver cátalogo
+                </button>
+            </div>
         </section>
-        <section class="secciones">
-
+        <section class="secciones us" id="nosotros">
+            <div class="us-container">
+                <h3>Nosotros</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias modi voluptatem dignissimos aut tempore et ipsam assumenda recusandae, temporibus doloribus, rem autem, fugiat alias error! Perferendis nihil tempore perspiciatis hic iure mollitia, voluptatum expedita provident cum quis repudiandae iste iusto a quibusdam? Ullam molestias, numquam placeat obcaecati qui omnis suscipit laborum ipsa commodi delectus rerum, deleniti doloribus quas officiis vitae inventore quisquam expedita repellat, asperiores deserunt unde enim sunt aspernatur. Aspernatur vitae, quod veniam mollitia animi soluta repellat delectus sed quis doloribus facilis molestias perspiciatis cupiditate ipsam non? Veritatis culpa eos unde qui! Odio dignissimos cumque totam excepturi optio neque.
+                </p>
+            </div>
         </section>
-        <section class="secciones">
-
+        <section class="secciones form" id="consultas">
+            <form action="">
+                <label for="">
+                    <input type="text">
+                </label>
+                <label for="">
+                    <input type="text">
+                </label>
+                <label for="">
+                    <input type="text">
+                </label>
+                <label for="">
+                    <input type="text">
+                </label>
+            </form>
         </section>
     </main>
-    <footer>
+    <footer id="contacto">
         <div class="contact-container"></div>
         <div class="contact-container"></div>
     </footer>
