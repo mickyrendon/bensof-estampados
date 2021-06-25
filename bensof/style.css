@@ -5,7 +5,6 @@
 }
 body{
     background-color: #ffffff;
-
 }
 header, nav, main, section, footer, .contact-container, div{
     width: auto;
@@ -74,8 +73,15 @@ main{
     text-align: center;
 }
 .see-more{
-    width: 100px;
-    height: 36px;
+    width: 46px;
+    height: 46px;
+    background-color: rgba(249, 249, 252, 0.76);
+    background-size: 30px;
+    background-position: center;
+    border-radius: 50%;
+}
+.see-more:hover{
+    border: 4px solid rgba(139, 6, 247, 0.753);
 }
 .products{
     background-color: lightyellow;
