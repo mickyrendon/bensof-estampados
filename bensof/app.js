@@ -31,8 +31,13 @@ function down(e){
 // menu mobile
 const menuBtn = document.querySelector('.menu');
       menuBtn.style.background = '#ffff'
-const menuLista = document.querySelector('.ul-list');
+// const menuLista = document.querySelector('.ul-list');
+//       menuLista.style.display = 'none';
+const menuLista = document.querySelector('.z-index-menu');
       menuLista.style.display = 'none';
+const close = document.querySelector('.close');
+      close.style.backgroundImage = 'url(/assets/close.png)'
+      close.style.display = 'none'
 
 // evento
 menuBtn.addEventListener('click', dropdown, true);
@@ -46,13 +51,31 @@ function dropdown(e){
         console.log('menu desplegado');
         e.target.style.background = 'red';
         menuLista.style.display = 'block';
+        close.style.display = 'block'
 
-    }else{
+    }
+// este codigo se puede utilizar en el menu desktop
+    /* else{ 
         
         console.log('menu plegado');
         e.target.style.background = '#ffff';
         menuLista.style.display = 'none';
+        close.style.display = 'none';
 
-    };
+    }; */
 
 };
+// funciona el btn cerrar pero falta darle la misma funcionalidad al clickar a los links del menu y al clickear afuera de los links, que estos tengan la misma funcionalidad que close
+const closing = () => {
+    let status = menuLista.style.display;
+
+    if(status == 'block'){
+
+        console.log('menu plegado');
+        // e.target.style.background = '#ffff';
+        menuLista.style.display = 'none';
+        close.style.display = 'none';
+    }
+}
+
+close.addEventListener('click', closing, true);
