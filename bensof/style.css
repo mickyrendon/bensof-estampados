@@ -37,6 +37,68 @@ nav{
     border-radius: 50%;
     /* usar border de imagen no de contenedor, shadow */
 }
+/* ---- menu mobile ----*/
+/* z-index menu */
+.z-index-menu{
+    /* definir tipo de medida */
+    width: 100vw;    
+    height: 100%;
+    position: fixed;
+    z-index: 9;
+    background-color: rgba(0, 0, 0, 0.904);
+    border: none;
+}
+.close{
+    width: 60px;
+    height:60px;
+    background-size: 85px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(161, 158, 154, 0.774);
+    border-radius: 50%;
+    border:2px solid rgba(93, 238, 49, 0.918);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+/* esta clase no se debe usar en mobile, es mas practica en desktop */
+/* .close:hover{
+    margin: 10px;
+    width: 40px;
+    height:40px;
+    background-size: 65px;
+    background-position: center;
+    border:2px solid rgba(93, 238, 49, 0.918);
+    /* background-color: transparent; 
+     background-color: rgb(161, 158, 154);
+} */
+.ul-list{
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid orangered; */
+    list-style: none;
+}
+.ul-list li{
+    margin: 10px 0;
+    width: 100%;
+    /* height: 50px; */
+    font-size: 2rem;
+    line-height: 2.4;
+    text-align: center;
+}
+.ul-list li:hover{
+    background-color: rgba(78, 75, 78, 0.952);
+}
+.ul-list a{
+    color: #ffffffe3;
+    text-decoration: none;
+}
+
 .title-container{
     height: 300px;
     display: flex;    
