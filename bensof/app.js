@@ -49,7 +49,8 @@ function dropdown(e){
     if(status == 'none'){
     
         console.log('menu desplegado');
-        e.target.style.background = 'red';
+        // efecto sandwich e.target
+        // e.target.style.background = 'red';
         menuLista.style.display = 'block';
         close.style.display = 'block'
 
@@ -65,7 +66,13 @@ function dropdown(e){
     }; */
 
 };
-// funciona el btn cerrar pero falta darle la misma funcionalidad al clickar a los links del menu y al clickear afuera de los links, que estos tengan la misma funcionalidad que close
+
+const servicesBtn  = document.querySelector('.services-anchor');
+const productsBtn  = document.querySelector('.products-anchor');
+const usBtn        = document.querySelector('.us-anchor');
+const questionsBtn = document.querySelector('.questions-anchor');
+const contactBtn   = document.querySelector('.contact-anchor');
+
 const closing = () => {
     let status = menuLista.style.display;
 
@@ -76,6 +83,12 @@ const closing = () => {
         menuLista.style.display = 'none';
         close.style.display = 'none';
     }
+    return `lista modo: ${status}`;
 }
 
 close.addEventListener('click', closing, true);
+servicesBtn.addEventListener('click', closing, true);
+productsBtn.addEventListener('click', closing, true);
+usBtn.addEventListener('click', closing, true);
+questionsBtn.addEventListener('click', closing, true);
+contactBtn.addEventListener('click', closing, true);
