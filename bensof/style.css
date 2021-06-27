@@ -6,8 +6,8 @@
 body{
     background-color: #ffffff;
 }
-header, nav, main, section, footer, .contact-container, div{
-    width: auto;
+.products-container, footer div{
+    /* width: auto; */
     /* height: 400px; */
     border: 1px solid rgba(17, 17, 17, 0.719);
 }
@@ -36,6 +36,11 @@ nav{
     height: auto;
     border-radius: 50%;
     /* usar border de imagen no de contenedor, shadow */
+}
+.dropdown-menu-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /* ---- menu mobile ----*/
 /* z-index menu */
