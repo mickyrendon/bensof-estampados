@@ -46,14 +46,22 @@ const usBtn        = document.querySelector('.us-anchor');
 const questionsBtn = document.querySelector('.questions-anchor');
 const contactBtn   = document.querySelector('.contact-anchor');
 
+// ligthbox
+const lightbox = document.querySelector('.z-index');
+    //   lightbox.style.display = 'none';
+
+
 const closing = () => {
     let status = menuLista.style.display;
+    // let ligtboxStatus = menuLista.style.display
+    // || ligtboxStatus == 'block'
 
-    if(status == 'block'){
+    if(status == 'block' ){
 
         console.log('menu plegado');
         // e.target.style.background = '#ffff';
         menuLista.style.display = 'none';
+        // lightbox.style.display = 'none';
         close.style.display = 'none';
     }
     return `lista modo: ${status}`;
@@ -65,6 +73,20 @@ productsBtn.addEventListener('click', closing, true);
 usBtn.addEventListener('click', closing, true);
 questionsBtn.addEventListener('click', closing, true);
 contactBtn.addEventListener('click', closing, true);
+
+
+// modal al clickear en las imagenes del carrusel
+// const carouselModalContainer = document.querySelector('.carousel-modal-container');
+//       carouselModalContainer.style.display = 'none'; 
+
+
+
+
+
+
+
+
+
 
 
 
