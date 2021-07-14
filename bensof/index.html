@@ -15,23 +15,23 @@
 <body>
     <!-- seccion del menu mobile z-index -->
     <div class="z-index-menu">
-        <button class="close"></button>
+        <button class="close"> <i class="bi bi-x-lg close-icon"></i></button>
         <ul class="ul-list">
-            <li>
-                <a href="#servicios" class="services-anchor">Servicios</a>
-            </li>
-            <li>
-                <a href="#productos" class="products-anchor">Productos</a>
-            </li>
-            <li>
-                <a href="#nosotros" class="us-anchor">Nosotros</a>
-            </li>
-            <li>
-                <a href="#consultas" class="questions-anchor">Consultas</a>
-            </li>
-            <li>
-                <a href="#contacto" class="contact-anchor">Contacto</a>
-            </li>
+            <a href="#accordionFlushExample" class="services-anchor">
+                <li>Servicios</li>
+            </a>
+            <a href="#productos" class="products-anchor">
+                <li>Productos</li>
+            </a>
+            <a href="#nosotros" class="us-anchor">
+                <li>Nosotros</li>
+            </a>
+            <a href="#consultas" class="questions-anchor">
+                <li>Consultas</li>
+            </a>
+            <a href="#contacto" class="contact-anchor">
+                <li>Contacto</li>
+            </a>
         </ul>
     </div>
     <nav>
@@ -43,17 +43,16 @@
         </div>
        
         <!-- menu mobile -->
-        <div class="dropdown-menu-container">
-            <button class="menu">
-                menu 
-            </button>
+        <div class="dropdown-menu-container menu">
+            <!-- <button class="menu"> -->
+                <i class="bi bi-list menu-icon"></i>
+            <!-- </button> -->
             <!-- configurar el evento -->
             
         </div>
         <!-- menu desktop -->
     </nav>
-    <header id="home">
-       
+    <header id="home" class="header">
         <div class="title-container logo-txt">
             <!-- <h1>Bensof</h1>
             <h3>estampados</h3> -->
@@ -130,12 +129,13 @@
                 </div>
             </div>
 
-            <div class="products-container ">
-                <!-- usar el evento para ocultar y mostrar la seccion en la misma pagina-->
+            <!-- boton para ir al glosario -->
+            <!-- <div class="products-container ">
+                <!-- usar el evento para ocultar y mostrar la seccion en la misma pagina--
                  <button type="button" class="btn btn-primary">
                      ver definiciones
                  </button>
-             </div>
+             </div> -->
 
         </section>
  
@@ -166,11 +166,11 @@
                         </a>
                     </div>
 
-                    <div class="carousel-item">
+                    <!-- <div class="carousel-item">
                         <a href="">
                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSQHd3kNId_kmCN01KBR30G51eS2GtrU8y_g&usqp=CAU" class="d-block w-100" alt="...">
                         </a>
-                    </div>
+                    </div> -->
 
                     <div class="carousel-item">
                         <a href="">
@@ -241,7 +241,7 @@
 
             <div class="mb-3">
                 <label for="exampleFormControlTextarea1" class="form-label"></label>
-                <textarea class="form-control" id="exampleFormControlTextarea1"  placeholder="Escriba su consulta" rows="3"></textarea>
+                <textarea class="form-control" id="exampleFormControlTextarea1"  placeholder="Escriba su consulta" rows="5"></textarea>
             </div>
 
             <div class="mb-3 btn-submit">

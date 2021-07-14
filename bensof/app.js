@@ -3,13 +3,13 @@
 
 // menu mobile
 const menuBtn = document.querySelector('.menu');
-      menuBtn.style.background = '#ffff'
+    //   menuBtn.style.background = '#ffff'
 // const menuLista = document.querySelector('.ul-list');
 //       menuLista.style.display = 'none';
 const menuLista = document.querySelector('.z-index-menu');
       menuLista.style.display = 'none';
 const close = document.querySelector('.close');
-      close.style.backgroundImage = 'url(/assets/close.png)'
+    //   close.style.backgroundImage = 'url(/assets/close.png)'
       close.style.display = 'none'
 
 // evento

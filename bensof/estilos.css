@@ -6,6 +6,12 @@
 body{
     background-color: #ffffff;
 }
+.networks-container ul li a, .ul-list a{
+    color:#1db4398a;
+}
+.networks-container ul li a:hover, .ul-list a:hover{
+    color:#1db439;
+}
 .products-container{
     margin: 10px 0;
     display: flex;
@@ -22,7 +28,8 @@ nav{
     position: sticky;
     top: 0;
     z-index: 8;
-    background-color: rgba(54, 163, 236, 0.8);
+    background-color: #282a2a9f;
+    /* background-color: rgba(54, 163, 236, 0.8); */
 }
 .logo-container, .menu{
     width: 50px;
@@ -42,6 +49,14 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    background:transparent;
+    /* background-color: transparent; */
+}
+.menu-icon{
+    font-size: 2rem;
+}
+.menu-icon:hover{
+    color: rgb(255, 255, 255);
 }
 /* ---- menu mobile ----*/
 /* z-index menu */
@@ -57,15 +72,18 @@ nav{
 .close{
     width: 60px;
     height:60px;
-    background-size: 85px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: rgba(161, 158, 154, 0.774);
-    border-radius: 50%;
-    border:2px solid rgba(93, 238, 49, 0.918);
+    background-color: transparent;
+    border:none;
     position: absolute;
     top: 10px;
     right: 10px;
+}
+.close-icon{
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.603);
+}
+.close-icon:hover{
+    color: rgb(255, 255, 255);
 }
 /* esta clase no se debe usar en mobile, es mas practica en desktop */
 /* .close:hover{
@@ -80,6 +98,7 @@ nav{
 } */
 .ul-list{
     margin: 0 auto;
+    padding: 0;
     width: 100%;
     height: 100%;
     display: flex;
@@ -101,7 +120,7 @@ nav{
     background-color: rgba(78, 75, 78, 0.952);
 }
 .ul-list a{
-    color: #ffffffe3;
+    width: 100%;
     text-decoration: none;
 }
 
@@ -109,10 +128,11 @@ header{
     height: 500px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.125)
 }
+
 .logo-txt{
     height: 100%;
     background-image: url(./assets/logos/bensof-txt-01.png);
-    background-size: 100%;
+    background-size: 400px;
     background-attachment:local;
     background-position: center;
     background-repeat: no-repeat;
@@ -176,7 +196,7 @@ main{
 
 
 .us{
-    background-color: lightcoral;
+    /* background-color: lightcoral; */
 }
 
 .us-container{
@@ -229,7 +249,7 @@ footer{
     border: none;
 }
 .contact-container ul{
-    padding: 0;
+    padding: 20px 0;
     margin: 0 auto;
     width: 80%;
 }
@@ -253,11 +273,19 @@ footer{
     margin-right: 10px;
     list-style: none;
 }
+
 .networks-container ul li i{
     font-size: 1.5rem;
 }
 
 
+/* --------- mediaqueries  desktop --------720 */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1920px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    
+}
 
 
 
