@@ -6,10 +6,41 @@
 body{
     background-color: #ffffff;
 }
+a{
+    text-decoration: none !important; 
+}
+p, button, li{
+    font-weight: bolder;
+    color: rgba(250, 73, 8, 0.849) !important;
+}
+.btn-primary:hover, .products-container button, .products-container a{
+    background-color: rgba(250, 73, 8, 0.849);
+    border-color:rgba(250, 73, 8, 0.849) ;
+}
+.btn-primary:hover, .products-container button:hover, .products-container a:hover{
+    background-color:rgba(250, 73, 8, 0.849);
+    border-color:rgba(250, 73, 8, 0.849) ;
+}
+
+.networks-container ul li a, .ul-list a{
+    color:#1db439;
+}
+.networks-container ul li a:hover, .ul-list a:hover{
+    color:#1db4398a;
+}
+.primary-btn{
+    /* padding: 20px 0; */
+    height: 80px;
+    position: relative;
+    z-index: 0;
+}
 .products-container{
-    margin: 10px 0;
+    /* margin: 10px 0; */
+    width: 100%;
     display: flex;
     justify-content: center;
+}
+.btn-principal{
 }
 
 nav{
@@ -22,7 +53,8 @@ nav{
     position: sticky;
     top: 0;
     z-index: 8;
-    background-color: rgba(54, 163, 236, 0.8);
+    background-color: #282a2ad8;
+    /* background-color: rgba(54, 163, 236, 0.8); */
 }
 .logo-container, .menu{
     width: 50px;
@@ -32,7 +64,7 @@ nav{
 .logo-container{
     border: none;
 }
-.logo-container img{
+.logo{
     width: 100%;
     height: auto;
     border-radius: 50%;
@@ -42,6 +74,15 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    background:transparent;
+    /* background-color: transparent; */
+}
+.menu-icon{
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.39);
+}
+.menu-icon:hover{
+    color: rgb(255, 255, 255);
 }
 /* ---- menu mobile ----*/
 /* z-index menu */
@@ -57,15 +98,18 @@ nav{
 .close{
     width: 60px;
     height:60px;
-    background-size: 85px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: rgba(161, 158, 154, 0.774);
-    border-radius: 50%;
-    border:2px solid rgba(93, 238, 49, 0.918);
+    background-color: transparent;
+    border:none;
     position: absolute;
     top: 10px;
     right: 10px;
+}
+.close-icon{
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.603);
+}
+.close-icon:hover{
+    color: rgb(255, 255, 255);
 }
 /* esta clase no se debe usar en mobile, es mas practica en desktop */
 /* .close:hover{
@@ -80,6 +124,7 @@ nav{
 } */
 .ul-list{
     margin: 0 auto;
+    padding: 0;
     width: 100%;
     height: 100%;
     display: flex;
@@ -101,18 +146,22 @@ nav{
     background-color: rgba(78, 75, 78, 0.952);
 }
 .ul-list a{
-    color: #ffffffe3;
+    width: 100%;
     text-decoration: none;
 }
-
+/* menu desktop */
+.menu-desktop{
+    display: none;
+}
 header{
     height: 500px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.125)
 }
+
 .logo-txt{
     height: 100%;
     background-image: url(./assets/logos/bensof-txt-01.png);
-    background-size: 100%;
+    background-size: 400px;
     background-attachment:local;
     background-position: center;
     background-repeat: no-repeat;
@@ -143,15 +192,17 @@ main{
     display: flex;
     flex-flow: row wrap;
 }
-
+.services-container{
+    display: none;
+}
 
 .products{
-    background-color: lightyellow;
+    background-color:#282a2a5e;
 }
 /* imagenes del carrusel */
 /* adaptar imagenes size al carrusel */
 .carousel-item img{
-    height: 500px;
+    height: 600px;
 }
 
 /* intento de lightbox clases de artesanias omar */
@@ -176,12 +227,21 @@ main{
 
 
 .us{
-    background-color: lightcoral;
+    /* background-color: lightcoral; */
+    padding: 40px 40px 0;
+    height: 600px;
+    display: flex;
+    justify-content: center;
 }
 
 .us-container{
-    padding: 20px ;
-    height: auto;
+    /* width: 80%; */
+    /* padding: 20px ; */
+    /* height: 100%; */
+    background-image: url(/assets/us/teamwork.svg);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 /* .us-container h3{
     /* difinir el tipo de direccion del texto */
@@ -190,7 +250,7 @@ main{
 .us-text-content{
     margin: 0;
     /* definir si darle un alto especifico para las mediaqueries */
-    /* max-height: 300px; */
+    max-height: 500px;
     overflow: hidden;
 }
 
@@ -229,7 +289,7 @@ footer{
     border: none;
 }
 .contact-container ul{
-    padding: 0;
+    padding: 20px 0;
     margin: 0 auto;
     width: 80%;
 }
@@ -253,11 +313,138 @@ footer{
     margin-right: 10px;
     list-style: none;
 }
+
 .networks-container ul li i{
     font-size: 1.5rem;
 }
 
 
+/* --------- mediaqueries  desktop --------720 */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1920px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    /* configuraciones generales */
+   
+    /*ocultando el menu mbile */
+    .dropdown-menu-container, .z-index-menu{
+        display: none;
+    }
+
+    /* menu desktop */
+    .menu-desktop{
+        margin-right:10px;
+        width: 400px;
+        display: block;
+    }
+    .menu-desktop ul{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        /* font-size: 1.5rem; */
+        list-style: none;
+    }
+    .menu-desktop ul li{
+        font-weight:600;
+        /* background-color: black; */
+        color:#1db439;
+    }
+    .menu-desktop a{
+        text-decoration: none;
+    }
+    .menu-desktop a:hover{
+        color:#1db4398a;
+    }
+    /* header */
+    header{
+        height: 600px;
+    }
+    /* ocultando la seccion acordeon de servicios*/
+    .acordion-container{
+        display: none;
+    }
+    /* mostrando la seccion servicios */
+    .services-container{
+        /* height: 500px; */
+        display: flex;
+        /* display: grid;
+        grid-template-columns: 60% 30%;
+        grid-template-rows: 50% ;        /* display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap; *
+        border: 2px solid blue; */
+    }
+    .column1{
+        width: 60%;
+        display: grid;
+        grid-template-rows: 50%;
+        background-color:#282a2a5e;
+    }
+    .column2{
+        width: 40%;
+        display: grid;
+        grid-template-rows: 33%;
+    }
+    .links-to-services1, .links-to-services{
+        display: flex;
+        justify-content: center;
+        font-size: 1.5rem;
+        align-items: center;
+        text-align: center;
+        border: 1px solid rgba(17, 17, 17, 0.719);
+    }
+    .estampados-link, .bordados-link, .confecciones-link, .trazos-link, .detalles-link{
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #282a2ad8;
+    }
+    .estampados-link{
+        /* width: 60%; */
+        /* height: 400px; */
+        background-image: url(/assets/services-img/serigrafía-en-Rosario-min.jpg);
+    }
+    .bordados-link{
+        background-image: url(/assets/services-img/bordado-a-mano.jpg);
+    }
+    .confecciones-link{
+        background-image: url(/assets/services-img/confeccion-grande.jpg);
+    }
+    .trazos-link{
+        background-image: url(/assets/services-img/trazo-corte.jpg);
+    }
+    .detalles-link{
+        background-image: url(/assets/services-img/maxresdefault.jpg);
+    }
+    .links-to-services{
+        /* width: 100%; */
+        height: 333.33px;
+    }
+    .services-a{
+        padding-top: 40%;
+        width: 100%;
+        height:100%;
+        background-color: #282a2a5e;
+        color: #ffffffe3  ;
+        /* line-height:14; */
+    }
+    .services-a:hover{
+        color: #fff;
+    }
+
+    /* formulario */
+    .form-section{
+        padding:140px;
+        border-top:1px solid #282a2a5e;
+    }
+
+    footer{
+        padding: 0 140px;
+    }
+}
 
 
 
