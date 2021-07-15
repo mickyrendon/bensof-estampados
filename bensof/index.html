@@ -37,7 +37,7 @@
     <nav>
         <div class="logo-container">
            <a href="#home">
-                <img src="./assets/logos/logo-circulo-01.jpg" alt="logo-bensof">
+                <img class="logo" src="./assets/logos/logo-circulo-01.jpg" alt="logo-bensof">
            </a>
             <!-- <span>logo</span> -->
         </div>
@@ -51,6 +51,25 @@
             
         </div>
         <!-- menu desktop -->
+        <div class="menu-desktop">
+            <ul>
+                <a href="#accordionFlushExample" class="services-anchor">
+                    <li>Servicios</li>
+                </a>
+                <a href="#productos" class="products-anchor">
+                    <li>Productos</li>
+                </a>
+                <a href="#nosotros" class="us-anchor">
+                    <li>Nosotros</li>
+                </a>
+                <a href="#consultas" class="questions-anchor">
+                    <li>Consultas</li>
+                </a>
+                <a href="#contacto" class="contact-anchor">
+                    <li>Contacto</li>
+                </a>
+            </ul>
+        </div>
     </nav>
     <header id="home" class="header">
         <div class="title-container logo-txt">
@@ -62,7 +81,15 @@
         <!-- <div class="btn-container">
             <button>contacto</button>
         </div> -->
+        
     </header>
+    <nav class="primary-btn">
+        <div class="products-container">
+             <button type="button" class="btn btn-primary btn-principal">
+                 <a class="btn-primary" href="#consultas">Cotiza con nosotros</a>
+             </button>
+         </div>
+    </nav>  
     <main>
         <!-- seccion acordeon inyectada de bootstrap -->
         <section class="accordion accordion-flush acordion-container" id="accordionFlushExample">
@@ -137,6 +164,29 @@
                  </button>
              </div> -->
 
+        </section>
+        <!-- seccion servicios desktop -->
+        <section class="services-container">
+            <div class="column1">
+                <div class="links-to-services1 estampados-link">
+                    <a class="services-a" href="./index2.html">Estampados</a>
+                </div>
+                <div class="links-to-services1 bordados-link">
+                    <a class="services-a" href="./index2.html">Bordados</a>
+                </div>
+            </div>
+
+            <div class="column2">
+                <div class="links-to-services confecciones-link">
+                    <a class="services-a" href="./index2.html">Confecciones</a>
+                </div>
+                <div class="links-to-services trazos-link">
+                    <a class="services-a" href="./index2.html">Trazos y cortes</a>
+                </div>
+                <div class="links-to-services detalles-link">
+                    <a class="services-a" href="./index2.html">Servicios Personalizados (detalles)</a>
+                </div>
+            </div>
         </section>
  
         <section class="secciones products" id="productos">
@@ -261,7 +311,7 @@
                 <!-- <img src="./assets/logos/bensof-txt-01.jpg" alt="bensof estampados texto" class="logo-txt" > -->
             </div>
             <ul>
-                <li>Calle falsa 123</li>
+                <li>Carrera 3 CW # 21-55</li>
                 <li>Montería / Colombia</li>
             </ul>
         </div>
