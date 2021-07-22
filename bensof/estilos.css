@@ -5,6 +5,7 @@
 }
 body{
     background-color: #ffffff;
+    scroll-behavior: smooth;
 }
 a{
     text-decoration: none !important; 
@@ -30,7 +31,7 @@ p, button, li{
 }
 .primary-btn{
     /* padding: 20px 0; */
-    height: 80px;
+    height: 60px;
     position: relative;
     z-index: 0;
 }
@@ -361,6 +362,9 @@ footer{
     /* header */
     header{
         height: 600px;
+    }
+    .btn-principal{
+        /* height: 80px; */
     }
     /* ocultando la seccion acordeon de servicios*/
     .acordion-container{
