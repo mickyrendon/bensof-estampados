@@ -1,0 +1,50 @@
+.body{
+    /* background-color: rgba(197, 29, 29, 0.959); */
+}
+h3{
+    color:#1db439;
+}
+.glosario{
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-flow:row wrap;
+}
+.container-img{
+    margin: 10px 0;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;    
+}
+.textual-content{
+    padding: 10px;
+    width: 40%;
+    background-color: rgba(43, 45, 46, 0.842);
+    /* height: 500px; */
+}
+
+/* backgrounds */
+.estampados, .bordados, .cortes, .confecciones, .trazos{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-color: rgba(43, 45, 46, 0.466);
+}
+.estampados{
+    background-image: url(https://www.la-grafika.com.ar/wp-content/uploads/2018/04/06c4de2f-2542-4e51-aaa1-135a7ecb7d94.jpeg);
+}
+.bordados{
+    background-image: url(https://i.pinimg.com/originals/ed/c2/e7/edc2e7009ae4611a008370e997340633.jpg);
+}
+.cortes{
+    background-image: url(https://i.ytimg.com/vi/m08cSTjNS_Y/maxresdefault.jpg);
+}
+.confecciones{
+    background-image: url(https://d26lpennugtm8s.cloudfront.net/stores/001/317/297/rte/Confeccion-1.png);
+}
+.detalles{
+    background-image: url(https://www.brildor.com/blog/wp-content/uploads/2020/02/productos-personalizables-dia-del-padre.jpg);
+}
