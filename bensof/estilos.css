@@ -187,7 +187,9 @@ main{
     /* cambiar depues este color por el definitivo */
     /* background-color: #cccc; */
 }
-
+.carousel-bstrp{
+    width: 100%;
+}
 .secciones{
     height: auto;
     display: flex;
@@ -198,10 +200,15 @@ main{
 }
 
 .products{
-    background-color:#282a2a5e;
+    /* background-color:#282a2a5e;   */
+    background-color: rgba(43, 45, 46, 0.466);
+
 }
 /* imagenes del carrusel */
 /* adaptar imagenes size al carrusel */
+.carousel-item{
+    width: 100%;
+}
 .carousel-item img{
     height: 600px;
 }
@@ -370,6 +377,12 @@ footer{
     .acordion-container{
         display: none;
     }
+
+    /* carrusel */
+    .carousel-bstrp{
+        margin: 0 auto;
+        max-width: 50%;
+    }
     /* mostrando la seccion servicios */
     .services-container{
         /* height: 500px; */
@@ -398,7 +411,8 @@ footer{
         font-size: 1.5rem;
         align-items: center;
         text-align: center;
-        border: 1px solid rgba(17, 17, 17, 0.719);
+        /* border: 1px solid rgba(17, 17, 17, 0.719); */
+        border: 1px solid rgba(250, 73, 8, 0.849) ;
     }
     .estampados-link, .bordados-link, .confecciones-link, .trazos-link, .detalles-link{
         background-size: 100% 100%;
@@ -438,6 +452,15 @@ footer{
     .services-a:hover{
         color: #fff;
     }
+
+    /* carrusel */
+    .carousel-item{
+        width: 100%;
+    }
+    .carousel-item img{
+        height: 600px;
+    }
+        
 
     /* formulario */
     .form-section{
