@@ -47,8 +47,8 @@ const questionsBtn = document.querySelector('.questions-anchor');
 const contactBtn   = document.querySelector('.contact-anchor');
 
 // ligthbox
-const lightbox = document.querySelector('.z-index');
-    //   lightbox.style.display = 'none';
+// const lightbox = document.querySelector('.z-index');
+//       lightbox.style.display = 'none';
 
 
 const closing = () => {
@@ -76,14 +76,41 @@ contactBtn.addEventListener('click', closing, true);
 
 
 // modal al clickear en las imagenes del carrusel
-// const carouselModalContainer = document.querySelector('.carousel-modal-container');
-//       carouselModalContainer.style.display = 'none'; 
+const carouselModalContainer = document.getElementsByClassName('carousel-modal-container');
+var array = [];
+
+for(i=0; i < carouselModalContainer.length; i++){
+    array.push(carouselModalContainer[i]);
+}
+
+const ligthbox = () => {
+    console.log('funcionando la funcion ligthbox');
+
+    // maquetar el lightbox dinamicamente
+}
+
+// carouselModalContainer.addEventListener('click', ligthbox, true);
+const loop = () => {
+    
+    for(i=0; i < array.length; i++){
+        array[i].addEventListener('click',ligthbox, true);
+    }
+    return `retornando cada elemento del array ${array.length}`;
+}
+loop();
+
+// var testElements = document.getElementsByClassName('test');
 
 
-
-
-
-
+ /* 
+  <div class="z-index" id="img1">
+      <button class="close">
+      </button>
+      <div class="image" >
+          <img src="https://i.pinimg.com/originals/c3/d9/30/c3d9308f2e81b7114aab72455a2a2ede.jpg"  class="d-block w-100" alt="..."><!-- " --
+      </div>
+  </div> 
+  */
 
 
 
