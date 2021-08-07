@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/logos/logo-circulo-01.jpg" type="image/x-icon">
     <!-- css link -->
     <link rel="stylesheet" href="./estilos.css">
     <!-- style a bootstrap -->
@@ -279,23 +280,23 @@
             </div>
         </section>
         <section class="secciones form-section" id="consultas">
-          <form action="">
+          <form action="https://formsubmit.co/mickyrendon42@gmail.com" method="POST">
             <h3>Contactanos</h3>
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label"></label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" require>
                 
                 <label for="exampleFormControlInput1" class="form-label"></label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="usuario@ejemplo.com">
+                <input type="email" name="email" class="form-control" id="email" placeholder="usuario@ejemplo.com" required>
             </div>
 
             <div class="mb-3">
                 <label for="exampleFormControlTextarea1" class="form-label"></label>
-                <textarea class="form-control" id="exampleFormControlTextarea1"  placeholder="Escriba su consulta" rows="5"></textarea>
+                <textarea class="form-control" name="textarea" id="textarea"  placeholder="Escriba su consulta" rows="5" required></textarea>
             </div>
 
             <div class="mb-3 btn-submit">
-                <input class="btn-send" type="submit" value="Enviar" >
+                <input id="submitBtn" class="btn-send" type="submit" value="Enviar">
             </div>
 
           </form> 

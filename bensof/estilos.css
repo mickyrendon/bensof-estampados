@@ -270,6 +270,7 @@ main{
 form{
     margin: 0 auto;
     width: 80%;
+    max-width: 500px;
     height:auto;
     display: flex;
     flex-flow: column nowrap;
@@ -466,6 +467,10 @@ footer{
     .form-section{
         padding:140px;
         border-top:1px solid #282a2a5e;
+    }
+    form{
+        max-width: 500px;
+        /* border: 1px solid orangered; */
     }
 
     footer{
