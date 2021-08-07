@@ -1,6 +1,3 @@
-
-
-
 // menu mobile
 const menuBtn = document.querySelector('.menu');
     //   menuBtn.style.background = '#ffff'
@@ -39,7 +36,6 @@ function dropdown(e){
     }; */
 
 };
-
 const servicesBtn  = document.querySelector('.services-anchor');
 const productsBtn  = document.querySelector('.products-anchor');
 const usBtn        = document.querySelector('.us-anchor');
@@ -53,7 +49,6 @@ const contactBtn   = document.querySelector('.contact-anchor');
 
 const closing = () => {
     let status = menuLista.style.display;
-    // let ligtboxStatus = menuLista.style.display
     // || ligtboxStatus == 'block'
 
     if(status == 'block' ){
@@ -64,6 +59,7 @@ const closing = () => {
         // lightbox.style.display = 'none';
         close.style.display = 'none';
     }
+ 
     return `lista modo: ${status}`;
 }
 
@@ -77,28 +73,172 @@ contactBtn.addEventListener('click', closing, true);
 
 // modal al clickear en las imagenes del carrusel
 const carouselModalContainer = document.getElementsByClassName('carousel-modal-container');
-var array = [];
+var array    = [];
+var arraySrc = [];
 
 for(i=0; i < carouselModalContainer.length; i++){
     array.push(carouselModalContainer[i]);
+    arraySrc.push(carouselModalContainer[i].firstElementChild.src);
 }
 
-const ligthbox = () => {
+const lightbox = () => {
     console.log('funcionando la funcion ligthbox');
+    // let arrayLightBox = arraySrc;
 
-    // maquetar el lightbox dinamicamente
+    // Creando las etiquetas del lightbox
+    const lightBoxContainer = document.createElement('div', 'class');
+    const closeBtn          = document.createElement('button', 'class');
+    const iconClose         = document.createElement('i', 'class');
+    const carouselContainer = document.createElement('div', 'class');
+    const leftArrow         = document.createElement('button', 'class');
+    const spanLeft          = document.createElement('span', 'class');
+    const spanLNext         = document.createElement('span', 'class');
+    const rightArrow        = document.createElement('button', 'class');
+    const spanRight         = document.createElement('span', 'class');
+    const spanRNext         = document.createElement('span', 'class');
+    
+    // agregando clases a los elementos
+    lightBoxContainer.classList.add('z-index-menu');
+    lightBoxContainer.style.display = 'flex';
+    lightBoxContainer.style.top = '0px';
+
+    closeBtn.classList.add('close');
+    iconClose.classList.add('bi','bi-x-lg', 'close-icon');   
+
+    carouselContainer.classList.add('carousel-container');
+    carouselContainer.style.margin = 'auto';
+    carouselContainer.style.width = '90vw';
+    carouselContainer.style.height = '600px';
+    carouselContainer.style.display = 'flex';
+    carouselContainer.style.justifyContent = 'space-between';
+    carouselContainer.style.backgroundSize = '100%';
+    carouselContainer.style.backgroundRepeat = 'no-repeat';
+    carouselContainer.style.backgroundPosition = 'center';
+    // carouselContainer.style.backgroundImage = "url('this.src')";
+// poner la url de la imagen que cliqueamos
+    // carouselContainer.style.backgroundImage = url('');
+    carouselContainer.style.border = '1px solid red';
+    // buscarle la vuelta uSAR PROMESAS
+        // carouselContainer.style.backgroundImage = "url('arrayLightBox[i]')";
+
+
+
+
+
+    leftArrow.classList.add('carousel-control-next');       
+    leftArrow.style.position = 'relative';       
+    spanLeft.classList.add('carousel-control-prev-icon');
+    spanLNext.classList.add('visually-hidden');
+    
+    rightArrow.classList.add('carousel-control-next');       
+    rightArrow.style.position = 'relative';       
+    spanRight.classList.add('carousel-control-next-icon');      
+    spanRNext.classList.add('visually-hidden');      
+    
+
+
+// posible selector multiple para los elementos de la misma clase
+    // const arrowBtns = document.getElementsByClassName('carousel-control-next');
+    //       arrowBtns.style.position = 'relative';
+    // agregando los elementos a un nodo/ identacion para una mejor comprension del nodo
+    document.body.appendChild(lightBoxContainer);
+        lightBoxContainer.appendChild(closeBtn);
+            closeBtn.appendChild(iconClose);
+        lightBoxContainer.appendChild(carouselContainer);
+            carouselContainer.appendChild(leftArrow);
+                leftArrow.appendChild(spanLeft);
+                leftArrow.appendChild(spanLNext);
+            carouselContainer.appendChild(rightArrow);
+                rightArrow.appendChild(spanRight);
+                rightArrow.appendChild(spanRNext);
+
+
+// funcionalidad del boton cerrar
+    closeBtn.addEventListener('click', closed, true);
+
+    function closed(){
+        lightBoxContainer.style.display = 'none';
+    }
+     
+    //    srcFor();
+    // e.target.style.backgroundImage.url = ''
 }
 
+// revisar
 // carouselModalContainer.addEventListener('click', ligthbox, true);
 const loop = () => {
-    
-    for(i=0; i < array.length; i++){
-        array[i].addEventListener('click',ligthbox, true);
+    let arrayLoop = array;
+    // let carouselContainer = document.getElementsByClassName('carousel-container');
+    for(i=0; i < arrayLoop.length; i++){
+        console.log(this.src);
     }
-    return `retornando cada elemento del array ${array.length}`;
+//    if()  
+    return `retornando cada elemento del array ${arrayLoop}`;
 }
 loop();
 
+
+
+
+// validaciones al form
+const isValid   = false;
+const fName     = document.getElementById('name').value;
+const fEmail    = document.getElementById('email').value;
+const fTextArea = document.getElementById('textarea').value;
+const submitBtn = document.getElementById('submitBtn');
+
+function validation(){
+
+    if(fName.length == 0){
+        isValid = false;
+        console.log('nombre en cero');
+        alert('ingrese un valor')
+    }
+}
+
+submitBtn.addEventListener('click', validation, true);
+
+
+// if(arraySrc.length < 5){//PROMESAS
+// if(lightbox){
+//     // promise()
+//     console.log('retornando promise en el if');
+// }else{
+//     console.log('else del if en promise');
+// }
+// meter esto en una funcion para que se ejecute cuando sea necesario
+// function promise(){
+
+
+    
+    // for(i=0; i < arraySrc.length; i++){
+    //     console.log('en el for del if');
+        
+    //     document.querySelector('.carousel-container').style.backgroundImage = "url('arraySrc[i]')";
+    // };   
+// }
+// imagenes del array // usar una funcion callback
+// function srcFor(){
+    
+//     if(loop){
+        
+//         let arrayLightBox = arraySrc;
+//         for(i=0; i < arrayLightBox.length; i++){
+//             console.log('en el for del if');
+
+//             carouselContainer[i].style.backgroundImage = "url('arrayLightBox[i]')";
+//         }   
+//         console.log(`mostrando el ${arrayLightBox[0]}`);
+
+//     }   
+//     // return arrayLightBox;
+// }
+
+
+
+// if(lightbox){
+    // document.querySelector('.close').addEventListener('click', closing, true);
+// }
 // var testElements = document.getElementsByClassName('test');
 
 
