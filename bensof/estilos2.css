@@ -84,8 +84,52 @@ h1, h3{
 
 /* texto de las imagenes */
 
+/* ------- estilos de la pagina thanks ------- */
+.body-container{
+    height: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./assets/logos/logo-circulo-01.jpg);
+    background-size: 100px;
+    background-attachment: fixed;
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+}
+.container-thanks{
+    padding: 250px 8px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:flex-start;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: #282a2ae5;
+    border:1px solid rgba(250, 73, 8, 0.849);
+    border-radius: 8px;
+}
+.title{
+    margin-bottom: 15px;
+    height: 130px;
+    line-height: 1;
+    font-size: 2.9em;
+    font-weight: bolder;
+}
+.btn{
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 30px;
+    background-color: rgba(230, 220, 220, 0.733);
+    border: 1px solid rgba(250, 73, 8, 0.849) ;
+}
 
-
+.btn a{
+    font-weight: 600;
+    text-decoration: none;
+}
+/* ----------------------------------------- */
 
 /* desktop */
 @media only screen
@@ -106,4 +150,5 @@ h1, h3{
         /* padding: 10px; */
         width: 40%;
     }
+
   };
