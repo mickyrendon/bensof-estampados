@@ -279,27 +279,30 @@
                 </p>
             </div>
         </section>
-        <section class="secciones form-section" id="consultas">
-          <form action="https://formsubmit.co/mickyrendon42@gmail.com" method="POST">
-            <h3>Contactanos</h3>
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label"></label>
-                <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" require>
-                
-                <label for="exampleFormControlInput1" class="form-label"></label>
-                <input type="email" name="email" class="form-control" id="email" placeholder="usuario@ejemplo.com" required>
-            </div>
+        <section class="secciones form-section" id="consultas" onkeydown="onKeyDown(event)">
+            <form id="formulario" action="https://formsubmit.co/mickyrendon42@gmail.com" method="POST">
+                <h3>Contactanos</h3>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label"></label>
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" required>
+                    
+                    <label for="exampleFormControlInput1" class="form-label"></label>
+                    <input type="email" name="email" class="form-control" id="email" placeholder="usuario@ejemplo.com" required>
+                </div>
 
-            <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label"></label>
-                <textarea class="form-control" name="textarea" id="textarea"  placeholder="Escriba su consulta" rows="5" required></textarea>
-            </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label"></label>
+                    <textarea class="form-control" name="textarea" id="textarea"  placeholder="Escriba su consulta" rows="5" required></textarea>
+                </div>
 
-            <div class="mb-3 btn-submit">
-                <input id="submitBtn" class="btn-send" type="submit" value="Enviar">
-            </div>
-
-          </form> 
+                <div class="mb-3 btn-submit">
+                    <input id="submitBtn" class="btn-send" type="submit" value="Enviar">
+                </div>
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html">
+                <input type="hidden" name="_autoresponse" value="Muchas gracias por contactarte con nosotros en menos de 24 horas(días habiles) responderemos tu consulta, saludos!">
+                <!-- averiguar para que funciona -->
+                <input type="text" name="_honey" style="display:none">
+            </form> 
           
         </section>
     </main>

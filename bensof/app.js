@@ -1,3 +1,6 @@
+const fName     = document.getElementById('name');
+const fEmail    = document.getElementById('email');
+const fTextArea = document.getElementById('textarea');
 // menu mobile
 const menuBtn = document.querySelector('.menu');
     //   menuBtn.style.background = '#ffff'
@@ -180,24 +183,56 @@ loop();
 
 
 
+// capturar las teclas presionadas
+function onKeyDown(event) {
+    // captura el nombre de cada tecla
+    const key = event.key;
+    //captura el codigo de cada tecla
+    var codigo = event.which || event.keyCode;
+
+    //la definicion del key (Enter) es camelcase
+    if(key == 'Enter'){
+        return console.log('tecla Enter presionada');
+    }
+    
+    //capturando el valor de 'spacebar'.
+    if(codigo == 32){
+        alert('prohibido ingresar espacios en blanco');
+        // no funciona a la primera vez, corregir
+        cleaner(); 
+    }
+
+    return console.log(`'Presionada: ' ${key}`);
+};
+
+//funcion limpiadora
+function cleaner(){
+    // inpu
+}
+
 // validaciones al form
-const isValid   = false;
-const fName     = document.getElementById('name').value;
-const fEmail    = document.getElementById('email').value;
-const fTextArea = document.getElementById('textarea').value;
-const submitBtn = document.getElementById('submitBtn');
+
 
 function validation(){
+    let isValid        = false;
+    const fNameVal     = document.getElementById('name').value;
+    const fEmailVal    = document.getElementById('email').value;
+    const fTextAreaVAl = document.getElementById('textarea').value;
+    const submitBtnVal = document.getElementById('submitBtn');
 
-    if(fName.length == 0){
+    if(fNameVal.length == 0){
         isValid = false;
         console.log('nombre en cero');
         alert('ingrese un valor')
+    }else{
+        isValid = true;
     }
 }
 
 submitBtn.addEventListener('click', validation, true);
 
+// CORREGIR LA MANERA DE ACCEDER AL FORMULARIO
+// let formulario = document.form['id del form];
 
 // if(arraySrc.length < 5){//PROMESAS
 // if(lightbox){
