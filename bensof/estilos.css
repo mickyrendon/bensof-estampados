@@ -161,11 +161,11 @@ header{
 
 .logo-txt{
     height: 100%;
-    background-image: url(./assets/logos/bensof-txt-01.png);
-    background-size: 400px;
-    background-attachment:local;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-image: url(./assets/logos/bensof-web.jpg);
+    background-size:300px;
+    background-attachment:fixed;
+    /* background-position:center; */
+    background-repeat:repeat;
 }
 /* codigo del titulo en h3 */
 /* .title-container{
@@ -296,6 +296,12 @@ footer{
 .logo-txt-container-footer{
     height: 200px;
     border: none;
+    background-image: url(./assets/logos/bensof-web.png);
+    background-size:300px;
+    background-attachment:scroll;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-color: transparent;
 }
 .contact-container ul{
     padding: 20px 0;
