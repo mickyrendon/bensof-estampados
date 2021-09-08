@@ -246,7 +246,7 @@ main{
     /* width: 80%; */
     /* padding: 20px ; */
     /* height: 100%; */
-    background-image: url(/assets/us/teamwork.svg);
+    background-image: url(./assets/us/teamwork.svg);
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -433,16 +433,16 @@ footer{
         background-image: url(./assets/services-img/serigrafía-en-Rosario-min.jpg);
     }
     .bordados-link{
-        background-image: url(/assets/services-img/bordado-a-mano.jpg);
+        background-image: url(./assets/services-img/bordado-a-mano.jpg);
     }
     .confecciones-link{
-        background-image: url(/assets/services-img/confeccion-grande.jpg);
+        background-image: url(./assets/services-img/confeccion-grande.jpg);
     }
     .trazos-link{
-        background-image: url(/assets/services-img/trazo-corte.jpg);
+        background-image: url(./assets/services-img/trazo-corte.jpg);
     }
     .detalles-link{
-        background-image: url(/assets/services-img/maxresdefault.jpg);
+        background-image: url(./assets/services-img/maxresdefault.jpg);
     }
     .links-to-services{
         /* width: 100%; */
