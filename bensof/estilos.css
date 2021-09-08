@@ -430,7 +430,7 @@ footer{
     .estampados-link{
         /* width: 60%; */
         /* height: 400px; */
-        background-image: url(/assets/services-img/serigrafía-en-Rosario-min.jpg);
+        background-image: url(./assets/services-img/serigrafía-en-Rosario-min.jpg);
     }
     .bordados-link{
         background-image: url(/assets/services-img/bordado-a-mano.jpg);
