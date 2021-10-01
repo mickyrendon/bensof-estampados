@@ -1,0 +1,16 @@
+{
+  "name": "bensof",
+  "version": "1.0.0",
+  "description": "pagina oficial de bensof estampados",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "micky rendon",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.0.2",
+    "bootstrap-icons": "^1.5.0"
+  }
+}
