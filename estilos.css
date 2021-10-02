@@ -293,12 +293,17 @@ footer{
 .contact-container{
     padding: 0 10px;
     height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: column nowrap;
+    align-items: center;
 }
 .logo-txt-container-footer{
-    height: 200px;
+    width: 8rem;
+    height:8rem;
     border: none;
     background-image: url(./assets/logos/bensof-web.png);
-    background-size:300px;
+    background-size: 8rem;;
     background-attachment:scroll;
     background-position:center;
     background-repeat:no-repeat;
@@ -306,8 +311,8 @@ footer{
 }
 .contact-container ul{
     padding: 20px 0;
-    margin: 0 auto;
-    width: 80%;
+    /* margin: 0 auto;
+    width: 80%; */
 }
 .contact-container ul li{
     font-size: 1.2rem;
@@ -318,10 +323,12 @@ footer{
 
 .networks-container{
     padding: 10px;
+    height: 4rem;
     border-top: 1px solid rgba(17, 17, 17, 0.719);
 }
 .networks-container ul{
     margin: 0;
+    padding: 0;
     display: flex;
     justify-content: space-around;
 }
