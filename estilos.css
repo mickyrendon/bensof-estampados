@@ -210,10 +210,6 @@ main{
 .carousel-item{
     width: 100%;
 }
-.carousel-item img{
-    height: 600px;
-}
-
 /* intento de lightbox clases de artesanias omar */
 .z-index{
     position:fixed;
