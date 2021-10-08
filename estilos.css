@@ -182,12 +182,19 @@ main{
 }
 
 /* seccion de los acordeones */
-.acordion-container{
-    /* height: auto; */
-    /* padding: 5px 0; */
-    /* cambiar depues este color por el definitivo */
-    /* background-color: #cccc; */
+.acordion-list{
+    margin: 0;
+    padding: 0 1rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-between;
+    line-height:2;
 }
+.accordion-li{
+    margin: 0 1rem;
+    color: #1db439 !important;
+}
+
 .carousel-bstrp{
     width: 100%;
 }
