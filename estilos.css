@@ -198,6 +198,10 @@ main{
 .carousel-bstrp{
     width: 100%;
 }
+/* modal */
+.no-scroll{
+    overflow: hidden;
+}
 .secciones{
     height: auto;
     display: flex;
