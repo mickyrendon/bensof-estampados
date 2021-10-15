@@ -19,9 +19,12 @@ h1, h3{
     flex-flow:row wrap;
 }
 /* secciones */
+.estampados-section, .bordados-section, .trazos-section, .confecciones-section, .details-section{
+    padding: 1.5rem 0;
+}
 /* definir los colores */
 .estampados-section{
-    background-color: rgba(161, 10, 161, 0.76);
+    /* background-color: rgba(161, 10, 161, 0.76); */
 }
 .bordados-section{
     background-color: rgba(161, 78, 10, 0.76);
@@ -51,7 +54,7 @@ h1, h3{
     box-shadow: 6px 1px 7px #d46a00, -6px -1px 7px #ff9600; */
 }
 .textual-content{
-    padding: 10px;
+    padding:1.5rem;
     width: 100%;
     background-color: rgba(43, 45, 46, 0.842);
     /* height: 500px; */
@@ -63,8 +66,8 @@ h1, h3{
     background-position: center;
     background-attachment: fixed;
     /* corregir el tama;o de las imagenes */
-    background-size: 100%;
-    background-color: rgba(43, 45, 46, 0.466);
+    background-size: 50rem;
+    /* background-color: rgba(43, 45, 46, 0.466); */
 }
 .estampados{
     background-image: url(https://www.la-grafika.com.ar/wp-content/uploads/2018/04/06c4de2f-2542-4e51-aaa1-135a7ecb7d94.jpeg);
@@ -111,7 +114,7 @@ h1, h3{
 }
 .title{
     margin-bottom: 15px;
-    height: 130px;
+    /* height: 130px; */
     line-height: 1;
     font-size: 2.9em;
     font-weight: bolder;
