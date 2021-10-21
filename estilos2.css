@@ -25,6 +25,9 @@ h1, h3{
 /* definir los colores */
 .estampados-section{
     /* background-color: rgba(161, 10, 161, 0.76); */
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
 }
 .bordados-section{
     background-color: rgba(161, 78, 10, 0.76);
@@ -41,7 +44,8 @@ h1, h3{
 
 /* ponerle sombra orange */
 .container-img{
-    margin: 40px 0;
+    /*definir el margin dependiendo del mediaquerie*/
+    /* margin: 40px 0; */
     /* width: 100%; */
     height: 30rem;
     display: flex;
@@ -54,20 +58,37 @@ h1, h3{
     box-shadow: 6px 1px 7px #d46a00, -6px -1px 7px #ff9600; */
 }
 .textual-content{
+    /* margin: 1rem 0; */
     padding:1.5rem;
+    height: 300px;
+    overflow: scroll;
     /* width: 100%; */
     background-color: rgba(43, 45, 46, 0.842);
    
 }
 /* ponerle puntos suspensivos al texto que se oculte */
-.textual-content p{
+.textual-content p, .paragraph{
     overflow:hidden;
     /* white-space:nowrap; */
     text-overflow: ellipsis;
     word-wrap: break-word;
 }
-
-
+/* codigo para la barra de scroll pero no anda en mozilla
+.paragraph{
+    /* background-color:white; *
+}
+.paragraph::-webkit-scrollbar{
+    width: 8px;
+    height: 8px;
+    /* display: none; *
+}
+.paragraph::-webkit-scrollbar-thumb{
+    background: tomato;
+    border-radius: 4px;
+}
+.paragraph::-webkit-scrollbar-track{
+    background: lightblue;
+} */
 /* backgrounds */
 .estampados, .bordados, .trazos, .confecciones, .detalles, .serigrafia, .sublimacion{
     background-repeat: no-repeat;
