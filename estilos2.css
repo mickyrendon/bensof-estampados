@@ -60,6 +60,7 @@ h1, h3{
 .textual-content{
     /* margin: 1rem 0; */
     padding:1.5rem;
+    /* cambiar despues de los 300px */
     height: 300px;
     overflow: scroll;
     /* width: 100%; */
@@ -171,6 +172,13 @@ h1, h3{
     text-decoration: none;
 }
 /* ----------------------------------------- */
+/* 300px */@media only screen
+  and (min-device-width:300px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .textual-content{
+        height: auto;
+    }
+  }
 
 /* desktop */
 @media only screen
