@@ -30,16 +30,16 @@ h1, h3{
     justify-content: space-evenly;
 }
 .bordados-section{
-    background-color: rgba(161, 78, 10, 0.76);
+    /* background-color: rgba(161, 78, 10, 0.76); */
 }
 .trazos-section{
-    background-color: rgba(103, 161, 10, 0.76);
+    /* background-color: rgba(103, 161, 10, 0.76); */
 }
 .confecciones-section{
-    background-color: rgba(10, 93, 161, 0.76);
+    /* background-color: rgba(10, 93, 161, 0.76); */
 } 
 .details-section{
-    background-color: tomato;
+    /* background-color: tomato; */
 }
 
 /* ponerle sombra orange */
@@ -152,10 +152,6 @@ h1, h3{
     border-radius: 8px;
 }
 .title{
-    margin-bottom: 15px;
-    /* height: 130px; */
-    line-height: 1;
-    font-size: 2.9em;
     font-weight: bolder;
 }
 .btn{
@@ -179,13 +175,28 @@ h1, h3{
         height: auto;
     }
   }
-
+/* 520px */
+@media only screen
+  and (min-device-width: 520px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .title{
+        /* margin-bottom: 15px; */
+        /* height: 130px; */
+        line-height: 1;
+        font-size: 2.9em;
+    }
+}
 /* desktop */
 @media only screen
   and (min-device-width: 768px)
   and (max-device-width: 1920px)
   and (-webkit-min-device-pixel-ratio: 1) {
-
+    .title{
+        /* margin-bottom: 15px; */
+        /* height: 130px; */
+        line-height: 1;
+        font-size: 2.9em;
+    }
     .container-img{
         display: flex;
         justify-content:flex-end;
