@@ -26,7 +26,8 @@ function dropdown(e){
         // e.target.style.background = 'red';
         menuLista.style.display = 'block';
         close.style.display = 'block'
-
+        document.body.classList.add('no-scroll');
+        
     }
 // este codigo se puede utilizar en el menu desktop
     /* else{ 
@@ -61,6 +62,7 @@ const closing = () => {
         menuLista.style.display = 'none';
         // lightbox.style.display = 'none';
         close.style.display = 'none';
+        document.body.classList.remove('no-scroll');
     }
  
     return `lista modo: ${status}`;
@@ -95,7 +97,8 @@ function validation(){
     }
 }
 
-submitBtn.addEventListener('click', validation, true);
+//esta tirando un error en el console/ VERIFICAR
+// submitBtn.addEventListener('click', validation, true);
 
 // CORREGIR LA MANERA DE ACCEDER AL FORMULARIO
 // let formulario = document.form['id del form];

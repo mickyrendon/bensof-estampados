@@ -7,7 +7,8 @@
 // }
 // modal al clickear en las imagenes del carrusel
 const carouselModalContainer = document.getElementsByClassName('carousel-modal-container');
-const url = carouselModalContainer[0].lastElementChild.src
+// const url = carouselModalContainer[0].lastElementChild.src;
+// const url = carouselModalContainer[0].children.attributes.src.value;
 // carouselModalContainer.index
 const modalHtml = () => {
     // Creando las etiquetas del lightbox
@@ -41,7 +42,7 @@ const modalHtml = () => {
     carouselContainer.style.backgroundRepeat = 'no-repeat';
     carouselContainer.style.backgroundPosition = 'center';
     // carouselContainer.style.backgroundImage = "url('this.src')";
-    carouselContainer.style.backgroundImage = "url(url)";
+    // carouselContainer.style.backgroundImage = url;
     // poner la url de la imagen que cliqueamos
     // carouselContainer.style.backgroundImage = url('');
     carouselContainer.style.border = '1px solid red';
@@ -66,6 +67,7 @@ const modalHtml = () => {
     lightBoxContainer.appendChild(closeBtn);
     closeBtn.appendChild(iconClose);
     lightBoxContainer.appendChild(carouselContainer);
+    lightBoxContainer.innerHTML = carouselInner;
     carouselContainer.appendChild(leftArrow);
     leftArrow.appendChild(spanLeft);
     leftArrow.appendChild(spanLNext);
@@ -84,6 +86,37 @@ const modalHtml = () => {
     
     //    srcFor();
     // e.target.style.backgroundImage.url = ''
+}
+const carouselInner = () => {
+    console.log('modal carousel');
+    let html = `<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img src="/assets/services-img/bordado-a-mano.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+        <img src="..." class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+        <img src="..." class="d-block w-100" alt="...">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+    </div>`;
+
+    return html;
 }
 
 const lightbox = () => {
