@@ -178,7 +178,7 @@ h1, h3{
         /* cambiar por center en desktop */
         background-position:top;
         /* cambiar por fixed en desktop */
-        background-attachment:scroll;
+        background-attachment:fixed;
         /* corregir el tama;o de las imagenes */
         background-size: contain;
         /* background-color: rgba(43, 45, 46, 0.466); */
