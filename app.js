@@ -1,6 +1,3 @@
-const fName     = document.getElementById('name');
-const fEmail    = document.getElementById('email');
-const fTextArea = document.getElementById('textarea');
 // menu mobile
 const menuBtn = document.querySelector('.menu');
     //   menuBtn.style.background = '#ffff'
@@ -78,27 +75,7 @@ contactBtn.addEventListener('click', closing, true);
 
 
 
-// validaciones al form
 
-
-function validation(){
-    let isValid        = false;
-    const fNameVal     = document.getElementById('name').value;
-    const fEmailVal    = document.getElementById('email').value;
-    const fTextAreaVAl = document.getElementById('textarea').value;
-    const submitBtnVal = document.getElementById('submitBtn');
-
-    if(fNameVal.length == 0){
-        isValid = false;
-        console.log('nombre en cero');
-        alert('ingrese un valor')
-    }else{
-        isValid = true;
-    }
-}
-
-//esta tirando un error en el console/ VERIFICAR
-// submitBtn.addEventListener('click', validation, true);
 
 // CORREGIR LA MANERA DE ACCEDER AL FORMULARIO
 // let formulario = document.form['id del form];
