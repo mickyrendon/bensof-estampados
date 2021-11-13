@@ -220,8 +220,8 @@ main{
 }
 /* imagenes del carrusel */
 /* adaptar imagenes size al carrusel */
-.carousel-modal-container{
-}
+/* .carousel-modal-container{
+} */
 .carousel-modal-container img{
     width: 100%;
     height: 30rem;
@@ -289,6 +289,10 @@ form{
     display: flex;
     flex-flow: column nowrap;
 }
+.hidden{
+    display: none;
+}
+
 .btn-submit{
     margin: 0 auto;
     width: 80%;
@@ -298,6 +302,9 @@ form{
 .btn-send{
    width: 100%;
 }
+
+
+
 footer{
     height: auto;
     background-color: rgb(40, 42, 42);
@@ -360,9 +367,9 @@ footer{
 @media only screen
   and (min-device-width: 520px)
   and (-webkit-min-device-pixel-ratio: 1) {
-    .us-container{
-        /* padding: 0 2.5rem; */
-    }
+    /* .us-container{
+        /* padding: 0 2.5rem; *
+    } */
   }
 
 /*720 */
@@ -409,9 +416,9 @@ footer{
     header{
         height: 600px;
     }
-    .btn-principal{
-        /* height: 80px; */
-    }
+    /* .btn-principal{
+        /* height: 80px; *
+    } */
     /* ocultando la seccion acordeon de servicios*/
     .acordion-container{
         display: none;
