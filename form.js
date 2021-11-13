@@ -8,21 +8,22 @@ var isValid     = false;
 
 
 function validation(){
-    if(fName.value.length < 2 || !alfa.test(fName)){
+    if(fName.value.length < 2){
         isValid = false;
-        console.log('nombre en cero');
-        alert('solo letras de la a-z minusculas o mayusculas');
+        alert('Solo nombres con más de dos caracteres');
         fName.value = '';
-        // cleaner()
     }else{
-        isValid = true;
-        console.log(isValid);
+        if(!alfa.test(fName.value)){
+            isValid = false;
+            // console.log(alfa.test(fName.value));
+            alert('Solo letras de la a-z minusculas o mayusculas');
+            fName.value = '';
+        }else{
+            isValid = true;
+            console.log(isValid);
+        }
     }
     console.log('testing validation');
 }
 
-// validation()
-//esta tirando un error en el console/ VERIFICAR
 submitBtn.addEventListener('click', validation, true);
-
-// limpiar campos al despues de validar la info

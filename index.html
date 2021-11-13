@@ -327,7 +327,7 @@
             </div>
         </section>
         <section class="secciones form-section" id="consultas">
-            <form id="formulario"  method="POST"><!-- action="https://formsubmit.co/mickyrendon42@gmail.com" -->
+            <form id="formulario"  method="POST" action="https://formsubmit.co/mickyrendon42@gmail.com" enctype="multipart/form-data"><!-- action="https://formsubmit.co/mickyrendon42@gmail.com" -->
                 <h3>Contactanos</h3>
                 <div class="mb-3 inputs-form" id="inputs-form">
                     <label for="exampleFormControlInput1" class="form-label"></label>
@@ -340,6 +340,13 @@
                 <div class="mb-3">
                     <label for="exampleFormControlTextarea1" class="form-label"></label>
                     <textarea class="form-control" name="textarea" id="textarea"  placeholder="Escriba su consulta" rows="5" required></textarea>
+<!-- TODO:Se ve un punto al darle hidden, si clickeo el punto se desaparece -->
+                      <button name="adjuntar archivos" type="button" id="add-images" title="adjuntar archivos">
+                        <i class="bi bi-paperclip"></i>
+                    </button>
+                    <label for="files">
+                        <input type="file" name="pic" id="files" title="subir una imagen" alt="adjuntar archivos" hidden><!-- class="hidden" -->
+                    </label>
                 </div>
 
                 <div class="mb-3 btn-submit">
@@ -397,6 +404,7 @@
     <script src="./form.js"></script>
     <script src="./cleaner.js"></script>
     <script src="./onkeyup.js"></script>
+    <script src="./addfiles.js"></script>
     <!-- <script src="/modal.js"></script> -->
 </body>
 

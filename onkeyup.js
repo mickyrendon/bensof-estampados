@@ -3,7 +3,7 @@ function onKeyUp(event){
     const codigo    = event.which || event.keyCode;
     const spaceBar  = codigo == 32; 
     const fs = fEmail.value.replace(/ /g, "") || fName.value.replace(/ /g, "");
-
+    
     if(spaceBar){
         alert('prohibido ingresar espacios');
         event.target.value = fs;
