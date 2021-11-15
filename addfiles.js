@@ -5,8 +5,7 @@ function bntPic(event){
     // files.classList.remove('hidden');
     files.hidden = false;
 
-    event.target.hidden = true;
-    // event.target.classList.add('hidden');
+    btnAddPic.classList.add('hidden');
     console.log('clickeado');
 }
 

@@ -292,7 +292,12 @@ form{
 .hidden{
     display: none;
 }
-
+.add-img{
+    margin-top: 0.4rem;
+    width: 2rem;
+    border-radius: 0.1rem;
+    border: 0.1rem solid #ccc;
+}
 .btn-submit{
     margin: 0 auto;
     width: 80%;
