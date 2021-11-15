@@ -292,11 +292,16 @@ form{
 .hidden{
     display: none;
 }
-.add-img{
+.add-img, .files{
     margin-top: 0.4rem;
-    width: 2rem;
     border-radius: 0.1rem;
     border: 0.1rem solid #ccc;
+}
+.add-img{
+    width: 2rem;
+}
+.files{
+    width: 100%;
 }
 .btn-submit{
     margin: 0 auto;
