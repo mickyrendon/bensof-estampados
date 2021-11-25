@@ -451,15 +451,15 @@ footer{
         border: 2px solid blue; */
     }
     .column1{
-        width: 60%;
+        width:50rem;
         display: grid;
         grid-template-rows: 50%;
         background-color:#282a2a5e;
     }
     .column2{
-        width: 40%;
+        width:50rem;
         display: grid;
-        grid-template-rows: 33%;
+        /* grid-template-rows: 33%; */
     }
     .links-to-services1, .links-to-services{
         display: flex;
@@ -495,15 +495,16 @@ footer{
     }
     .links-to-services{
         /* width: 100%; */
-        height: 333.33px;
+        height: 25rem;
     }
     .services-a{
-        padding-top: 40%;
         width: 100%;
         height:100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background-color: #282a2a5e;
         color: #ffffffe3  ;
-        /* line-height:14; */
     }
     .services-a:hover{
         color: #fff;
