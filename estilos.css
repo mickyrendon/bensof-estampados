@@ -16,14 +16,26 @@ p, button, li{
     /* color: rgba(234, 225, 222, 0.85) !important; */
     color: rgba(250, 73, 8, 0.849) !important;
 }
-.btn-primary:hover, .products-container button, .products-container a{
+.btn-primary{
+    background-color: #f54809;
+    border-color: #f54809;
+}
+.btn-primary:hover{
     background-color: rgba(250, 73, 8, 0.849);
     border-color:rgba(250, 73, 8, 0.849) ;
 }
+.btn-primary-a{
+    color: #ffffffe3;
+}
+.btn-primary-a:hover{
+    color: #fff;
+    font-weight: 600;
+}
+/* 
 .btn-primary:hover, .products-container button:hover, .products-container a:hover{
     background-color:rgba(250, 73, 8, 0.849);
     border-color:rgba(250, 73, 8, 0.849) ;
-}
+} */
 
 .networks-container ul li a, .ul-list a{
     color:#1db439;
@@ -42,9 +54,6 @@ p, button, li{
     width: 100%;
     display: flex;
     justify-content: center;
-}
-.btn-principal{
-    /* width: 12rem; */
 }
 
 nav{
@@ -429,6 +438,13 @@ footer{
     /* .btn-principal{
         /* height: 80px; *
     } */
+    .btn-primary-a{
+        color: #ffffffe3;
+        font-weight: 600;
+    }
+    .btn-primary-a:hover{
+        color: #fff;
+    }
     /* ocultando la seccion acordeon de servicios*/
     .acordion-container{
         display: none;
