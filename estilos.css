@@ -82,7 +82,27 @@ nav{
     height: auto;
     border-radius: 50%;
     /* usar border de imagen no de contenedor, shadow */
+ 
 }
+@keyframes pulse {
+    from {
+      transform: scale3d(1, 1, 1);
+    }
+  
+    50% {
+      transform: scale3d(1.05, 1.05, 1.05);
+    }
+  
+    to {
+      transform: scale3d(1, 1, 1);
+    }
+  }
+.logo:hover{
+    animation-name: pulse;
+    animation-timing-function: ease-in-out;
+    /* border-radius: 3px; */
+}
+
 .dropdown-menu-container{
     display: flex;
     justify-content: center;
@@ -274,6 +294,9 @@ main{
     background-position: center;
     background-repeat: no-repeat;
 }
+/* .us-container h3:hover{
+    animation-name: fadeInUp;
+} */
 /* .us-container h3{
     /* difinir el tipo de direccion del texto */
     /* text-align: center; *
