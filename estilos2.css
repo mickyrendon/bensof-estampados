@@ -188,13 +188,13 @@ h1, h3{
     }
     .serigrafia{
         /* background-image: url(https://www.la-grafika.com.ar/wp-content/uploads/2018/04/06c4de2f-2542-4e51-aaa1-135a7ecb7d94.jpeg); */
-        background-image: url(/assets/index2/rasero.jpg);
+        background-image: url(./assets/index2/rasero.jpg);
     }
     .sublimacion{
-        background-image: url(/assets/index2/sublimacion.jpg);
+        background-image: url(./assets/index2/sublimacion.jpg);
     }
     .vinilo{
-        background-image: url(/assets/index2/vinilo.jpg);
+        background-image: url(./assets/index2/vinilo.jpg);
     }
     .bordados{
         background-image: url(https://i.pinimg.com/originals/ed/c2/e7/edc2e7009ae4611a008370e997340633.jpg);
