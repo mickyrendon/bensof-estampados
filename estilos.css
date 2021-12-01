@@ -84,25 +84,6 @@ nav{
     /* usar border de imagen no de contenedor, shadow */
  
 }
-@keyframes pulse {
-    from {
-      transform: scale3d(1, 1, 1);
-    }
-  
-    50% {
-      transform: scale3d(1.05, 1.05, 1.05);
-    }
-  
-    to {
-      transform: scale3d(1, 1, 1);
-    }
-  }
-.logo:hover{
-    animation-name: pulse;
-    animation-timing-function: ease-in-out;
-    /* border-radius: 3px; */
-}
-
 .dropdown-menu-container{
     display: flex;
     justify-content: center;
@@ -580,6 +561,19 @@ footer{
     }
 }
 
+.btn-primary:hover{
+    transform: scale(1.4);
+  }
+  
+  /* .has-transition */
+  .btn-primary{
+    transition: transform 150ms ease-in-out;
+  }
+
+/* .btn-primary:hover{
+    transform: scale3d(1.05, 1.05, 1.05);
+    animation-timing-function: ease-in-out;
+} */
 
 
 
