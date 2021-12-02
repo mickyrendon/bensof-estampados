@@ -10,6 +10,10 @@ body{
 a{
     text-decoration: none !important; 
 }
+.opacity{
+    opacity: 0;
+    transition: all 0.5s;
+}
 p, button, li{
     /* font-weight: bolder; */
     font-weight: 600;
@@ -19,7 +23,7 @@ p, button, li{
 .btn-primary{
     background-color: #f54809;
     border-color: #f54809;
-    transition: transform 150ms ease-in-out;
+    transition: transform 230ms ease-in-out;
 }
 .btn-primary:hover{
     background-color: rgba(250, 73, 8, 0.849);
