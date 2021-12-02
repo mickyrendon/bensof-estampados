@@ -134,3 +134,6 @@ node_modules/animate.css/source/zooming_exits/zoomOutDown.css
 node_modules/animate.css/source/zooming_exits/zoomOutLeft.css
 node_modules/animate.css/source/zooming_exits/zoomOutRight.css
 node_modules/animate.css/source/zooming_exits/zoomOutUp.css
+
+# js script scroll animation
+scrollanimations.js
