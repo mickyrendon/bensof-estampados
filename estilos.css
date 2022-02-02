@@ -14,9 +14,12 @@ a{
     opacity: 0;
     transition: all 0.5s;
 }
-p, button, li{
+p, button, li, .accordion-button{
     font-weight: 600;
     color: rgba(222, 64, 6, 0.89);
+}
+.accordion-button:not(.collapsed){
+    color: rgba(222, 64, 6, 0.7);
 }
 .btn-primary{
     background-color: #f54809;
@@ -504,11 +507,11 @@ footer{
         background-repeat: no-repeat;
         background-color: #282a2ad8;
     }
-    .estampados-link:hover, .bordados-link:hover, .confecciones-link:hover, .trazos-link:hover, .detalles-link:hover{
-    /* Add the blur effect */
-        /* filter: blur(2px);
-        -webkit-filter: blur(2px); */
-    }
+    /* .estampados-link:hover, .bordados-link:hover, .confecciones-link:hover, .trazos-link:hover, .detalles-link:hover{
+    /* Add the blur effect *
+        filter: blur(2px);
+        -webkit-filter: blur(2px);
+    } */
     .estampados-link{
         /* width: 60%; */
         /* height: 400px; */
@@ -530,7 +533,9 @@ footer{
         /* width: 100%; */
         height: 25rem;
     }
-    .services-a{
+
+
+     .services-a{
         width: 100%;
         height:100%;
         display: flex;
@@ -538,104 +543,103 @@ footer{
         align-items: center;
         color: #ffffffc9  ;
     }
-    
+    /*.services-a:hover{
+        font-size: 2rem;
+        color: #fff !important;
+        /* opacity: 0.7; *
+        transition: all 0.2s;
+    } */
     .a-a{
         color: inherit;
         text-decoration: none;
     }
-    .a-a {
+   .a-a {
         position: relative;
         display: block;
         padding: 10px;
-      }
-      
+    }
+
     .border {
         position: absolute;
         left: 0;
         background: currentColor;
         transition: transform var(--transition-duration) ease-in-out;
     }
-      
-    .border-top,
-    .border-bottom {
+
+    .border-top, .border-bottom {
         width: 100%;
         height: 1px;
         transform: scaleX(0);
     }
-      
+
     .border-left, .border-right {
         width: 1px;
         height: 100%;
         transform: scaleY(0);
     }
-      
-    .border-top, .border-left, .border-right {
+
+    .border-top,.border-left,.border-right {
         top: 0;
     }
-      
+
     .border-bottom {
         bottom: 0;
         transform-origin: bottom right;
     }
-      
+
     .border-top {
         transform-origin: top left;
     }
-      
+
     .border-left {
         transform-origin: bottom left;
     }
-      
+
     .border-right {
         left: auto;
         right: 0;
         transform-origin: top right;
     }
-    .a-a:hover{
-        font-size: 2rem;
-        color: #fff !important;
-        /* opacity: 0.7; */
-        transition: all 0.2s;
-    }
+
     .a-a:hover .border-top,
     .a-a:hover .border-bottom {
         transform: scaleX(1);
     }
-      
+
     .a-a:hover .border-left,
     .a-a:hover .border-right {
         transform: scaleY(1);
     }
-      
+
     .a-a:hover .border-right {
         transition-delay: var(--transition-delay);
     }
-      
+
     .a-a:hover .border-bottom {
         transition-delay: calc(var(--transition-delay) * 2);
     }
-      
+
     .a-a:hover .border-left {
         transition-delay: calc(var(--transition-delay) * 3);
     }
-      
-      
-      /* ANIMATIONS
-      –––––––––––––––––––––––––––––––––––––––––––––––––– */
-      .menu[data-animation="diagonal"] .border-left {
+
+
+    /* ANIMATIONS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .a-container[data-animation="diagonal"] .border-left {
         transform-origin: top left;
-      }
-      
-      .menu[data-animation="diagonal"] .border-right,
-      .menu[data-animation="diagonal"] .border-bottom {
+    }
+
+    .a-container[data-animation="diagonal"] .border-right,
+    .a-container[data-animation="diagonal"] .border-bottom {
         transform-origin: bottom right;
-      }
-      
-      .menu[data-animation="diagonal"] .a-a:hover [class^=border]{
+    }
+
+    .a-container[data-animation="diagonal"] .a:hover [class^=border]{
         transition-delay: 0s;
-      }
-      
-/* ----------------------------------------------------------------- */
+    }
+
+
     /* carrusel */
     .carousel-item{
         width: 100%;
