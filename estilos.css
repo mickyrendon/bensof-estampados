@@ -390,7 +390,21 @@ footer{
 .networks-container ul li i{
     font-size: 1.5rem;
 }
-
+/* signature */
+.signature {
+    justify-content: center;
+    background: transparent;
+    border-top: 1px solid rgba(17, 17, 17, 0.719);
+    color: #6c757d;
+  }
+.signature span, .signature a, .layer_1 {
+    padding: 0;
+    font-size: calc(0.6rem + .2vw);
+    text-align: center;
+  }
+  .layer_1 {
+    width: 2.5rem;
+    height: 2rem;
 
 /* --------- mediaqueries  desktop --------*/
 /* 520 */
