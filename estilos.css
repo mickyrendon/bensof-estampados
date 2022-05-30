@@ -232,7 +232,7 @@ main{
 
 .products{
     /* background-color:#282a2a5e;   */
-    background-color: rgba(43, 45, 46, 0.466);
+    background-color: rgba(43, 45, 46, 0.778);
 
 }
 /* imagenes del carrusel */
@@ -405,24 +405,25 @@ footer{
   .layer_1 {
     width: 2.5rem;
     height: 2rem;
-
+  }
 /* --------- mediaqueries  desktop --------*/
 /* 520 */
-@media only screen
-  and (min-device-width: 520px)
+/* @media only screen
+ and (min-device-width: 520px)
   and (-webkit-min-device-pixel-ratio: 1) {
     /* .us-container{
         /* padding: 0 2.5rem; *
-    } */
-  }
+    } *
+  } */
 
 /*720 */
+/* and (-webkit-min-device-pixel-ratio: 1) */
 @media only screen
-  and (min-device-width: 720px)
+  and (min-device-width: 768px)
   and (max-device-width: 1920px)
   and (-webkit-min-device-pixel-ratio: 1) {
-    /* configuraciones generales */
-    /*ocultando el menu mbile */
+        /* configuraciones generales */
+        /*ocultando el menu mbile */
     .dropdown-menu-container, .z-index-menu{
         display: none;
     }
@@ -513,18 +514,31 @@ footer{
         border: 1px solid rgba(250, 73, 8, 0.849) ;
     }
     /* .links-to-services1:hover .links-to-services:hover{
-       
+    
     } */
     .estampados-link, .bordados-link, .confecciones-link, .trazos-link, .detalles-link{
         background-size: 100% 100%;
         background-position: center;
         background-repeat: no-repeat;
         background-color: #282a2ad8;
+        opacity: 0.8;
     }
-    /* .estampados-link:hover, .bordados-link:hover, .confecciones-link:hover, .trazos-link:hover, .detalles-link:hover{
-    /* Add the blur effect *
+    /* .blur-container{
         filter: blur(2px);
         -webkit-filter: blur(2px);
+    } */
+    .btn-container{
+        max-width: 20rem;
+        box-shadow: 6px 1px 90px 12px rgba(0, 0, 0, 0.526) inset;
+        /* filter: blur(0px);
+        -webkit-filter: blur(0px); */
+    }
+    /* .estampados-link:hover, .bordados-link:hover, .confecciones-link:hover, .trazos-link:hover, .detalles-link:hover{
+        /* transform: scale(1, 1.05); */
+        /* Add the blur effect */
+        /* filter: blur(0px);
+        -webkit-filter: blur(0px); *
+        
     } */
     .estampados-link{
         /* width: 60%; */
@@ -549,7 +563,7 @@ footer{
     }
 
 
-     .services-a{
+    .services-a{
         width: 100%;
         height:100%;
         display: flex;
@@ -564,13 +578,16 @@ footer{
         transition: all 0.2s;
     } */
     .a-a{
-        color: inherit;
+        color: #fcfdfe;
         text-decoration: none;
-    }
-   .a-a {
         position: relative;
         display: block;
         padding: 10px;
+        opacity: 9;
+    }
+    .a-a:hover{
+        color:#1db439;
+        opacity: 9;
     }
 
     .border {
